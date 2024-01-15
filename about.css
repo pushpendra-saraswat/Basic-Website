@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./images/Background.jpg);
+}
+
+.main {
+    padding: 5px;
+    margin: 5px;
+
+    height: 100vh;
+    width: 100%;
+
+
+}
+
+.nav {
+
+    display: flex;
+
+    height: 50px;
+    padding: 10px;
+   margin: 10px;
+
+
+
+}
+
+.logo {
+    flex: 20%;
+
+    margin-left: 20px;
+
+
+}
+
+.logoname {
+    color: orangered;
+    font-size: 30px;
+    /* margin-top: 5px; */
+    margin-bottom: 5px;
+}
+
+.navbar {
+    flex: 50%;
+}
+
+ul {
+
+    display: flex;
+
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    list-style-type: none;
+    justify-content: space-around;
+
+}
+
+li {
+
+    font-size: 20px;
+
+    margin-right: 10px;
+    /* 
+    text-align: center; */
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.Search {
+    flex: 30%;
+    /* float: right; */
+    margin-top: 5px;
+    text-align: right;
+    /* margin-right: 50px; */
+    margin-bottom: 5px;
+    height: 30px;
+
+
+
+
+
+}
+
+::placeholder {
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.serch {
+    border: 1px solid orangered;
+    background: transparent;
+
+    font-family: sans-serif;
+
+
+    height: 28px;
+
+
+}
+
+.srch {
+    border: 2px solid orangered;
+    border-bottom: 1px solid orangered;
+    background-color: orangered;
+    margin: 0;
+    width: 100px;
+    border-right: none;
+    height: 28px;
+    float: right;
+}

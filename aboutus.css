@@ -1,0 +1,21 @@
+.hero{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.about{
+    color: rgb(224, 75, 21);
+    font-size: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.paragraph{
+    
+    margin: 50px 10px 10px 10px;
+    padding: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+p{
+    font-size: 20px;
+}

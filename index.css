@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Roboto Mono', monospace !important; */
+}
+
+body {
+    background-image: url(./images/Background.jpg);
+
+   
+
+
+}
+
+.main {
+    padding: 10px;
+    margin: 10px;
+
+    height: 100vh;
+    width: 100%;
+   
+
+}
+
+.nav {
+
+    display: flex;
+
+    height: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+   
+    margin-bottom: 20px;
+
+
+
+}
+
+.logo {
+    flex: 20%;
+
+    margin-left: 20px;
+
+
+}
+
+.logoname {
+    color: orangered;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.navbar {
+    flex: 50%;
+}
+
+ul {
+
+    display: flex;
+
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    list-style-type: none;
+    justify-content: space-around;
+
+}
+
+li {
+
+    font-size: 20px;
+
+    margin-right: 10px;
+    /* 
+    text-align: center; */
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+
+.Search {
+    flex: 30%;
+    /* float: right; */
+    margin-top: 5px;
+    text-align: right;
+    /* margin-right: 50px; */
+    margin-bottom: 5px;
+    height: 30px;
+
+
+
+
+
+}
+
+::placeholder {
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.serch {
+    border: 1px solid orangered;
+    background: transparent;
+
+    font-family: sans-serif;
+
+
+    height: 28px;
+
+
+}
+
+.srch {
+    border: 2px solid orangered;
+    border-bottom: 1px solid orangered;
+    background-color: orangered;
+    margin: 0;
+    width: 100px;
+    border-right: none;
+    height: 28px;
+    float: right;
+}
+
+
+.content {
+    font-size: 70px;
+    color: white;
+
+    font-family: 'Roboto Mono', monospace;
+}
+
+.hero {
+    display: flex;
+    height: auto;
+    justify-content: space-around;
+
+}
+
+.para {
+    color: orangered;
+    font-size: 90px;
+}
+
+.paragraph {
+    color: white;
+    font-size: 20px;
+}
+
+.join-us {
+    background-color: orangered;
+    color: black;
+    border-radius: 5px;
+    height: 30px;
+    width: 150px;
+    border: none;
+    font-family: sans-serif;
+    margin-top: 20px;
+}
+
+.hero-left {
+    margin-top: 225px
+}
+
+.login {
+    background-color: black;
+    width: 350px;
+    height: 450px;
+
+    margin-top: 200px;
+    margin-bottom: 20px;
+
+    right: 50px;
+    border-radius: 10px;
+
+
+
+}
+
+.here {
+    background-color: white;
+    width: 300px;
+    margin-left: 25px;
+    border-radius: 5px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.here h2 {
+    color: orange;
+    margin-left: 80px;
+    font-size: 30px
+}
+
+.login input {
+    width: 300px;
+    height: 40px;
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    /* font-family: sans-serif; */
+    font-family: 'Roboto Mono', monospace;
+    margin-left: 25px;
+
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid orangered;
+    margin-top: 30px;
+
+}
+
+.btn {
+    width: 300px;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 25px;
+    background-color: orangered;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.icons {
+    margin-left: 40px;
+
+    margin-bottom: 20px;
+
+
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 4px;
+    border-radius: 50%;
+    margin-right: 10px;
+
+
+    background-color: black;
+    color: white;
+
+}
+
+/* .fa:hover{
+    color: orange;
+} */
+
+.fa-facebook {
+
+    background-color: white;
+    color: black;
+
+}
+
+.btnn {
+    cursor: pointer;
+
+}
+
+.btnn:hover {
+    color: orange;
+}
+
+a:hover {
+    color: orange;
+}
+
+.signup {
+    color: orangered;
+    margin-left: 50px;
+}
+
+
+
+/* for 1000px width */
+
+@media screen and (min-width:500px) and (max-width:1000px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        flex: 100%;
+        align-items: center;
+
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-left {
+        margin-top: 100px;
+        text-align: center;
+
+    }
+
+    .login {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        flex: 100%;
+        align-items: center;
+
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-left {
+        margin-top: 100px;
+        text-align: center;
+
+    }
+
+    .login {
+        margin-top: 40px;
+    }
+
+    .logoname {
+        font-size: 20px;
+
+    }
+
+    li {
+        font-size: 10px;
+    }
+
+    .content {
+        font-size: 40px;
+    }
+
+    .para {
+        font-size: 60px;
+    }
+
+    .paragraph {
+        font-size: 12px;
+    }
+
+    .here h2 {
+        font-size: 30px;
+    }
+}
