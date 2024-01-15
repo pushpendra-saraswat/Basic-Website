@@ -53,11 +53,11 @@
                 <div class="here">
                     <h2>Login Here</h2>
                 </div>
-                <form>
+                <form onsubmit="myfunc(event)">
 
-                    <input type="mail" name="email" placeholder="Enter Email Here">
-                    <input type="password" name="password" placeholder="Enter Password Here">
-                    <button class="btn btnn">Login</button>
+                    <input id="mail" type="mail" name="email" placeholder="Enter Email Here">
+                    <input id="pass" type="password" name="password" placeholder="Enter Password Here">
+                    <button class="btn btnn" type="submit">Login</button>
 
                 </form>
                 <h3 style="color: white; margin-left: 80px; margin-top: 20px;">Don't have an account? <br> <a href="#"
@@ -76,6 +76,42 @@
         </div>
 
     </div>
+    <script>
+
+        function myfunc(event) {
+            event.preventDefault();
+            let mail_id = document.getElementById("mail").value;
+            let passwrd = document.getElementById("pass").value;
+            const formData = {
+                email: mail_id,
+                password: passwrd
+            };
+            saveformdata(formData);
+        }
+        function saveformdata(formData) {
+            // const storedata = JSON.parse(localStorage.getItem('formData')) || [];
+            // storedata.push(formData);
+            // localStorage.setItem('formData', JSON.stringify(storedata));
+            // console.log(formData);
+
+            let flag = false;
+            const storeData = JSON.parse(localStorage.getItem('formData')) || [];
+        //    console.log(storedata[0].email);
+
+            for (let i=0;i< storeData.length;i++) {
+                if (formData.email == storeData[i].email) {
+                    storeData[i].password = formData.password;
+                    flag = true;
+                    break;
+                }
+            }
+            if (flag == false) {
+                storeData.push(formData);
+            }
+            localStorage.setItem('formData', JSON.stringify(storeData));
+        }
+      
+    </script>
 </body>
 
 </html>
