@@ -55,7 +55,7 @@
                 </div>
                 <form onsubmit="myfunc(event)">
 
-                    <input id="mail" type="mail" name="email" placeholder="Enter Email Here">
+                    <input id="mail" type="email" name="email" placeholder="Enter Email Here">
                     <input id="pass" type="password" name="password" placeholder="Enter Password Here">
                     <button class="btn btnn" type="submit">Login</button>
 
@@ -97,7 +97,7 @@
             let flag = false;
             const storeData = JSON.parse(localStorage.getItem('formData')) || [];
         //    console.log(storedata[0].email);
-
+        
             for (let i=0;i< storeData.length;i++) {
                 if (formData.email == storeData[i].email) {
                     storeData[i].password = formData.password;
