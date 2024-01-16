@@ -1,3 +1,8 @@
+
+.content{
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
 .hero{
     margin: 10px;
     padding: 10px;
@@ -18,4 +23,8 @@
 }
 p{
     font-size: 20px;
+}
+
+@media screen and (min-width:500px) and (max-width:1000px){
+
 }
