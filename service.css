@@ -11,8 +11,15 @@ body {
 }
 
 .service{
-         font-size: 60px;
+         font-size: 50px;
          color: white;
+         margin: 20px;
+         padding: 10px;
+}
+@media screen and (max-width:500px){
+    h1{
+        font-size: 30px;
+    }
 }
 
 
